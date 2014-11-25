@@ -53,3 +53,7 @@ c:\users\eugen_000\documents\visual studio 2013\Projects\League\League\bin\Micro
 c:\users\eugen_000\documents\visual studio 2013\Projects\League\League\obj\Debug\League.csprojResolveAssemblyReference.cache
 c:\users\eugen_000\documents\visual studio 2013\Projects\League\League\obj\Debug\League.dll
 c:\users\eugen_000\documents\visual studio 2013\Projects\League\League\obj\Debug\League.pdb
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.Init.resources
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.csproj.GenerateResource.Cache
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.AddedSkeleton.resources
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.Changestatustostate.resources

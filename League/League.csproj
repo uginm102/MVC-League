@@ -163,10 +163,36 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411251129053_Init.cs" />
+    <Compile Include="Migrations\201411251129053_Init.Designer.cs">
+      <DependentUpon>201411251129053_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411251140577_Added-Skeleton.cs" />
+    <Compile Include="Migrations\201411251140577_Added-Skeleton.Designer.cs">
+      <DependentUpon>201411251140577_Added-Skeleton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411251145069_Change status to state.cs" />
+    <Compile Include="Migrations\201411251145069_Change status to state.Designer.cs">
+      <DependentUpon>201411251145069_Change status to state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Coach.cs" />
+    <Compile Include="Models\Contract.cs" />
+    <Compile Include="Models\Fixture.cs" />
+    <Compile Include="Models\FixtureStatistics.cs" />
+    <Compile Include="Models\FixtureStatus.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Referee.cs" />
+    <Compile Include="Models\Season.cs" />
+    <Compile Include="Models\Stadium.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\Enums.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -224,6 +250,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201411251129053_Init.resx">
+      <DependentUpon>201411251129053_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411251140577_Added-Skeleton.resx">
+      <DependentUpon>201411251140577_Added-Skeleton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411251145069_Change status to state.resx">
+      <DependentUpon>201411251145069_Change status to state.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
