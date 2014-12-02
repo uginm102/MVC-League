@@ -24,7 +24,15 @@ namespace League.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+        [TestMethod]
+        public void TestViewWithEnglish()
+        {
+            HomeController controller = new HomeController();
 
+            ViewResult result = controller.Index() as ViewResult;
+
+
+        }
         [TestMethod]
         public void About()
         {

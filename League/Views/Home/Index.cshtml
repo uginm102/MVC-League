@@ -1,31 +1,72 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    var culture = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.ToLowerInvariant();
 }
-
+@helper selected(string c, string culture)
+{
+    if (c == culture)
+    {
+        @:checked="checked"
+    }
+}
 <div class="jumbotron">
+    @using (Html.BeginForm("SetCulture", "Home"))
+    {
+        <fieldset>
+            <legend></legend>
+            <div class="control-group">
+                <div class="controls">
+                    <label for="en-us">
+                        <input name="culture" id="en-us" value="en-us" type="radio" @selected("en-us", culture) /> English
+                    </label>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <div class="controls">
+                    <label for="fr">
+                        <input name="culture" id="fr" value="fr" type="radio" @selected("fr", culture) /> French               </label>               </div>
+            </div>
+
+        </fieldset>
+
+
+
+    }
     <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p class="lead">ASP.NET @Resources.IntroText</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+      
+        <h2>@Resources.GettingStarted</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            ASP.NET MVC @Resources.GettingStartedText
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">@Resources.LearnMore &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>@Resources.GetMoreLibraries</h2>
+        <p>NuGet @Resources.GetMoreLibrariesText</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">@Resources.LearnMore &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>@Resources.WebHosting</h2>
+        <p>@Resources.WebHostingText</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">@Resources.LearnMore &raquo;</a></p>
     </div>
 </div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        (function ($) {
+            $("input[type = 'radio']").click(function () {
+                console.log("submit form")
+                $(this).parents("form").submit(); // post form
+            });
+
+        })(jQuery);
+    </script>
+}
