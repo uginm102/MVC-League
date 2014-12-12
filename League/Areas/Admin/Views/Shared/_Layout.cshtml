@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-2">
+        <ul>
+            <li>@Html.ActionLink("Season", "Index", "Season")</li>
+        </ul>
+    </div>
+    <div class="col-xs-10">@RenderBody()</div>
+</div>
+@RenderSection("scripts", required: false)
