@@ -28,9 +28,8 @@ namespace League.Controllers
             return View();
         }
          public ActionResult SetCulture(string culture)
-    {
-        Console.WriteLine("in conosole");
-        Console.WriteLine(culture);
+       {
+        
         // Validate input
         culture = CultureHelper.GetImplementedCulture(culture);
         // Save culture in a cookie
