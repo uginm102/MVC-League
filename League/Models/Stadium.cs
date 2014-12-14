@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace League.Models
 {
     public class Stadium
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "StadiumName")]
         public string Name { get; set; }
 
         [Required]
-        [Display(Name = "Address")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "StadiumAddress")]
         public string Address { get; set; }
     }
 }

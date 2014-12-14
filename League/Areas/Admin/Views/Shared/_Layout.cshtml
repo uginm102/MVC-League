@@ -1,11 +1,17 @@
-﻿@{
+﻿@using Resources
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="row">
     <div class="col-xs-2">
         <ul>
-            <li>@Html.ActionLink("Season", "Index", "Season")</li>
+            <li>@Html.ActionLink(Resources.Season, "Index", "Season")</li>
+            <li>@Html.ActionLink(Resources.Stadium, "Index", "Stadium")</li>
+            <li>@Html.ActionLink(Resources.Referee, "Index", "Referee")</li>
+            <li>@Html.ActionLink(Resources.Fixture, "Index", "Fixture")</li>
+            <li>@Html.ActionLink(Resources.Team, "Index", "Team")</li>
+            <li>@Html.ActionLink(Resources.Player, "Index", "Player")</li>
         </ul>
     </div>
     <div class="col-xs-10">@RenderBody()</div>

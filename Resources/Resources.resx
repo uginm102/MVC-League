@@ -144,4 +144,106 @@
   <data name="WebHostingText" xml:space="preserve">
     <value>You can easily find a web hosting company that offers the right mix of features and price for your applications.</value>
   </data>
+  <data name="SeasonStartDate" xml:space="preserve">
+    <value>Season begins</value>
+  </data>
+  <data name="SeasonEndDate" xml:space="preserve">
+    <value>Season ends</value>
+  </data>
+  <data name="SeasonName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="StadiumName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="StadiumAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Season" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="Stadium" xml:space="preserve">
+    <value>Stadium</value>
+  </data>
+  <data name="Referee" xml:space="preserve">
+    <value>Referee</value>
+  </data>
+  <data name="FixtureState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="FixturePeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="FixtureAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="FixtureKickOff" xml:space="preserve">
+    <value>Kick off</value>
+  </data>
+  <data name="FixtureHomeTeam" xml:space="preserve">
+    <value>Home team</value>
+  </data>
+  <data name="FixtureAwayTeam" xml:space="preserve">
+    <value>Away team</value>
+  </data>
+  <data name="FixtureSeason" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="FixtureReferee" xml:space="preserve">
+    <value>Referee</value>
+  </data>
+  <data name="ContractStartDate" xml:space="preserve">
+    <value>Contract start date</value>
+  </data>
+  <data name="ContractEndDate" xml:space="preserve">
+    <value>Contract end date</value>
+  </data>
+  <data name="ContractTeam" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="ContractPerson" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="ContractDateOfTermination" xml:space="preserve">
+    <value>Date of termination</value>
+  </data>
+  <data name="CoachTeam" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="PlayerTeam" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="TeamName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="TeamStadium" xml:space="preserve">
+    <value>Stadium</value>
+  </data>
+  <data name="TeamCoach" xml:space="preserve">
+    <value>Coach</value>
+  </data>
+  <data name="TeamPlayers" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="Fixture" xml:space="preserve">
+    <value>Fixture</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="PersonLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="PersonFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="PersonDOB" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="PersonFullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Player</value>
+  </data>
 </root>

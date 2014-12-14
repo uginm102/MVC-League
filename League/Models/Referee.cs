@@ -7,6 +7,5 @@ namespace League.Models
 {
     public class Referee : Person
     {
-        public int ID { get; set; }
     }
 }

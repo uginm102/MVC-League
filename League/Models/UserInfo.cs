@@ -7,6 +7,5 @@ namespace League.Models
 {
     public class UserInfo: Person
     {
-        public int ID { get; set; }
     }
 }

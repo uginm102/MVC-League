@@ -12,7 +12,7 @@ namespace League.Areas.Admin.Controllers
 {
     public class SeasonController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private LeagueDbContext db = new LeagueDbContext();
 
         // GET: /Admin/Season/
         public ActionResult Index()

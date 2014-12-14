@@ -122,3 +122,6 @@ C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\bin\Micro
 C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\bin\fr\Resources.resources.dll
 C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.dll
 C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.pdb
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.RenamedIDs.resources
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.CoachNeedsTeam.resources
+C:\Users\eugen_000\Documents\Visual Studio 2013\Projects\League\League\obj\Debug\League.Migrations.RemoveIDFromUserInfo.resources

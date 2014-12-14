@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace League.Models
 {
     public class Season
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "SeasonName")]
         public string Name { get; set; }
 
         [Required]
-        [Display(Name = "Season end date")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "SeasonStartDate")]
         public DateTime Start { get; set; }
 
-
         [Required]
-        [Display(Name = "Season start date")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "SeasonEndDate")]
         public DateTime Stop { get; set; }
     }
 }

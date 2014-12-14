@@ -160,7 +160,12 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FixtureController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PlayerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RefereeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SeasonController.cs" />
+    <Compile Include="Areas\Admin\Controllers\StadiumController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TeamController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -180,6 +185,18 @@
     <Compile Include="Migrations\201411251145069_Change status to state.Designer.cs">
       <DependentUpon>201411251145069_Change status to state.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412131602471_RenamedIDs.cs" />
+    <Compile Include="Migrations\201412131602471_RenamedIDs.Designer.cs">
+      <DependentUpon>201412131602471_RenamedIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412131609495_CoachNeedsTeam.cs" />
+    <Compile Include="Migrations\201412131609495_CoachNeedsTeam.Designer.cs">
+      <DependentUpon>201412131609495_CoachNeedsTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412131614334_RemoveIDFromUserInfo.cs" />
+    <Compile Include="Migrations\201412131614334_RemoveIDFromUserInfo.Designer.cs">
+      <DependentUpon>201412131614334_RemoveIDFromUserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Coach.cs" />
@@ -187,7 +204,8 @@
     <Compile Include="Models\Fixture.cs" />
     <Compile Include="Models\FixtureStatistics.cs" />
     <Compile Include="Models\FixtureStatus.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\LeagueDbContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Referee.cs" />
@@ -217,6 +235,31 @@
     <Content Include="Areas\Admin\Views\Season\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Season\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Stadium\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Stadium\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Stadium\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Stadium\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Stadium\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Referee\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Referee\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Referee\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Referee\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Referee\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Player\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Player\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Player\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Player\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Player\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Fixture\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Fixture\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Fixture\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Fixture\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Fixture\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Team\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Team\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Team\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Team\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Team\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -275,6 +318,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201411251145069_Change status to state.resx">
       <DependentUpon>201411251145069_Change status to state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412131602471_RenamedIDs.resx">
+      <DependentUpon>201412131602471_RenamedIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412131609495_CoachNeedsTeam.resx">
+      <DependentUpon>201412131609495_CoachNeedsTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412131614334_RemoveIDFromUserInfo.resx">
+      <DependentUpon>201412131614334_RemoveIDFromUserInfo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

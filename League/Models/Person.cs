@@ -9,22 +9,22 @@ namespace League.Models
 {
     public abstract class Person
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [StringLength(50)]
-        [Display(Name = "Last Name")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "PersonLastName")]
         public string LastName { get; set; }
 
         [Required]
-        [Display(Name = "First Name")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "PersonFirstName")]
         public string FirstName { get; set; }
 
         [Required]
-        [Display(Name = "Date of birth")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "PersonDOB")]
         public DateTime DOB { get; set; }
 
-        [Display(Name = "Full Name")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "PersonFullName")]
         public string FullName
         {
             get

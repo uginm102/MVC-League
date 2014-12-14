@@ -9,10 +9,10 @@ namespace League.Models
 {
     public class FixtureStatistics
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        [Display(Name = "Action")]
+        [Display(ResourceType = typeof (Resources.Resources), Name = "FixtureAction")]
         public FixtureAction Action { get; set; }
 
         public virtual Fixture Fixture { get; set; }

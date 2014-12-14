@@ -1,17 +1,15 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
+using System.Web;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace League.Models
 {
-    // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser
+    public class LeagueDbContext : IdentityDbContext<User>
     {
-        public virtual UserInfo UserInfo { get; set; }
-    }
-
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {
-        public ApplicationDbContext()
+        public LeagueDbContext()
             : base("DefaultConnection")
         {
         }
@@ -27,5 +25,12 @@ namespace League.Models
         public DbSet<FixtureStatistics> FixtureStatistics { get; set; }
         public DbSet<FixtureStatus> FixtureStatus { get; set; }
         public DbSet<Season> Season { get; set; }
+        public DbSet<Person> Person { get; set; }
+
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Team>().HasRequired(a => a.Coach).WithRequiredPrincipal(b => b.Team);
+        //    base.OnModelCreating(modelBuilder);
+        //}
     }
 }
